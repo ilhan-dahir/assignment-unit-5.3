@@ -6,11 +6,21 @@ let collection = {};
 
 // - Add a function named `addToCollection`. This function should:
 //   - Take in the album's `title`, `artist`, `yearPublished` as input parameters
-//   - Create a new object having the above properties
-//   - Add the new object to the end of the `collection` array
-//   - Return the newly created object
+function addToCollection(title, artist, yearPublished){
+    
+    //   - Create a new object having the above properties
+    const newAlbum ={
+        title: 'title',
+        artist: 'artist',
+        yearPublished: 'yearPublished'
+    };
 
+    //   - Add the new object to the end of the `collection` array
+    collection.push(newAlbum);
 
+    //   - Return the newly created object
+    return newAlbum;
+}
 
 // - Test the `addToCollection` function:
 //   - Add 6 albums to your collection. Aim to have a mix of both same and different artists and published years. (Feel free to share your musical interests, or make stuff up. Totally fine either way.)

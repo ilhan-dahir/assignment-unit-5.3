@@ -20,7 +20,7 @@ function addToCollection(title, artist, yearPublished) {
 
     //   - Return the newly created object
     return newAlbum;
-}
+}//end addToCollection
 
 // - Test the `addToCollection` function:
 //   - Add 6 albums to your collection. Aim to have a mix of both same and different artists and published years. (Feel free to share your musical interests, or make stuff up. Totally fine either way.)
@@ -59,7 +59,29 @@ console.log('Added Item to Collection', collection);
 //   - Console.log the number of items in the array.
 //   - Loop over the array and console.log each album's information formatted like: `TITLE by ARTIST, published in YEAR`.
 
+////////////////////
+////////////////////
+//COME BACK FOR THIS ONE
+//////////////////////
+/////////////////////////
+
+
+function showCollection(albums){
+    //Show items in array
+    console.log('Number of items in collection:', albums.legnth);
+
+    //Loop over the array and console.log each album's information formatted like: `TITLE by ARTIST, published in YEAR`.
+    for (let i = 0; i<albums.legnth; i++){
+        console.log(albums[i].title, "by ", albums[i].artist, "Published in ", albums[i].yearPublished );
+    }//end for
+}//end
+
+
 // - Test the `showCollection` function.
+
+showCollection(collection);
+
+
 
 // - Add a function named `findByArtist`. This function should:
 //   - Take in `artist` (a string) parameter

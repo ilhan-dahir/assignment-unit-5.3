@@ -2,17 +2,17 @@ console.log('***** Music Collection *****')
 
 // - Create a variable `collection` that starts as an empty array.
 
-let collection = {};
+const collection = [];
 
 // - Add a function named `addToCollection`. This function should:
 //   - Take in the album's `title`, `artist`, `yearPublished` as input parameters
-function addToCollection(title, artist, yearPublished){
-    
+function addToCollection(title, artist, yearPublished) {
+
     //   - Create a new object having the above properties
-    const newAlbum ={
-        title: 'title',
-        artist: 'artist',
-        yearPublished: 'yearPublished'
+    const newAlbum = {
+        title: title,
+        artist: artist,
+        yearPublished: yearPublished
     };
 
     //   - Add the new object to the end of the `collection` array
@@ -26,6 +26,33 @@ function addToCollection(title, artist, yearPublished){
 //   - Add 6 albums to your collection. Aim to have a mix of both same and different artists and published years. (Feel free to share your musical interests, or make stuff up. Totally fine either way.)
 //   - Console.log each album as added using the returned value.
 //   - After all are added, console.log the `collection` array.
+
+//add album  and test
+const albumOne = addToCollection('Red Ruby da Sleeze', 'Nicki Minaj', '2023');
+console.log('Album 1:', albumOne);
+console.log('Added Item to Collection', collection);
+
+const albumTwo = addToCollection('Waving Flag', 'Knaan', '2011');
+console.log('Album 2:', albumTwo);
+console.log('Added Item to Collection', collection);
+
+const albumThree = addToCollection('Code', 'Dave Chappelle', '2003');
+console.log('Album 3:', albumThree);
+console.log('Added Item to Collection', collection);
+
+const albumFour = addToCollection('Blue', 'Mr. Bluey', '1829');
+console.log('Album 4:', albumFour);
+console.log('Added Item to Collection', collection);
+
+const albumFive = addToCollection('Red', 'Ms. Red', '2013');
+console.log('Album 5:', albumFive);
+console.log('Added Item to Collection', collection);
+
+
+const albumSix = addToCollection('So What', 'Pink', '2008');
+console.log('Album 6:' , albumSix);
+console.log('Added Item to Collection', collection);
+
 
 // - Add a function named `showCollection`. This function should:
 //   - Take in an array parameter. (This allows it to be reused to show any collection, like the results from the find or search.)

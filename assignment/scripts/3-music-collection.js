@@ -116,6 +116,35 @@ console.log(findByArtist('Riri'));
 //     - If no results are found, return an empty array.
 //     - If there is no search object or an empty search object provided as input, then return all albums in the `collection`.
 
+// function to search collection
+function search (artist, year){
+    console.log('in search function');
+    let results = [];
+    //Check if search is empty, if empty return full collection
+    if (artist === undefined && year === undefined){
+        results = collection;
+    }
+    // else we will loop through collection
+    else {
+    for(let i = 0; i < collection.length; i++){
+       if (collection[i].artist === artist && collection[i].yearPublished === year){
+        //if we find a artist, put in results array
+        results.push(collection[i]);
+       }//end if
+       }
+       return results;
+    }//end for
+    return results;
+}//end function
+
+/// Test search function
+console.log(search('Nicki Minaj','2023'));
+console.log(search());
+console.log(search('Anna May','2003'));
+console.log(search('Knaan'));
+
+
+
 // - Add an array of `tracks` to your album objects. Each track should have a `name` and `duration`. You will need to update the functions to support this new property:
 //   - Update the `addToCollection` function to also take an input parameter for the array of tracks.
 //   - Update `search` to allow a `trackName` search criteria. 

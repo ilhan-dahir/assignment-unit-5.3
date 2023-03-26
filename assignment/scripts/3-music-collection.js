@@ -30,31 +30,27 @@ function addToCollection(title, artist, yearPublished) {
 //add album  and test
 const albumOne = addToCollection('Red Ruby da Sleeze', 'Nicki Minaj', '2023');
 console.log('Album 1:', albumOne);
-console.log('Added Item to Collection', collection);
 
 const albumTwo = addToCollection('Waving Flag', 'Knaan', '2011');
 console.log('Album 2:', albumTwo);
-console.log('Added Item to Collection', collection);
 
 const albumThree = addToCollection('Code', 'Dave Chappelle', '2003');
 console.log('Album 3:', albumThree);
-console.log('Added Item to Collection', collection);
 
 const albumFour = addToCollection('Blue', 'Mr. Bluey', '1829');
 console.log('Album 4:', albumFour);
-console.log('Added Item to Collection', collection);
 
 const albumFive = addToCollection('Red', 'Ms. Red', '2013');
 console.log('Album 5:', albumFive);
-console.log('Added Item to Collection', collection);
 
 
 const albumSix = addToCollection('So What', 'Pink', '2008');
 console.log('Album 6:' , albumSix);
-console.log('Added Item to Collection', collection);
 
 const albumSeven = addToCollection('Pink Friday', 'Nicki Minaj', '2008');
 console.log('Album 7:' , albumSeven);
+
+//Check Collection of albums
 console.log('Added Item to Collection', collection);
 
 // - Add a function named `showCollection`. This function should:

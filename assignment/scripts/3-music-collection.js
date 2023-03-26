@@ -53,6 +53,9 @@ const albumSix = addToCollection('So What', 'Pink', '2008');
 console.log('Album 6:' , albumSix);
 console.log('Added Item to Collection', collection);
 
+const albumSeven = addToCollection('Pink Friday', 'Nicki Minaj', '2008');
+console.log('Album 7:' , albumSeven);
+console.log('Added Item to Collection', collection);
 
 // - Add a function named `showCollection`. This function should:
 //   - Take in an array parameter. (This allows it to be reused to show any collection, like the results from the find or search.)
@@ -73,16 +76,34 @@ function showCollection(array){
 // // - Test the `showCollection` function.
 showCollection(collection);
 
-
-
-
 // - Add a function named `findByArtist`. This function should:
 //   - Take in `artist` (a string) parameter
 //   - Create an array to hold any results, empty to start
 //   - Loop through the `collection` and add any objects with a matching artist to the array.
 //   - Return the array with the matching results. If no results are found, return an empty array.
 
+function findByArtist (artist){
+    console.log('in findByArtist');
+    results = []; // create array to hold artist name
+   
+    //loop through our collection
+    for (let i = 0; i < collection.length; i++){
+        // if we find matching artist, put in our results
+        if(collection[i].artist === artist){
+            results.push(collection[i]);
+        }//end 
+
+    }//end for
+
+    return results;
+}
+
 // - Test the `findByArtist` function. Make sure to test with an artist you know is in the collection, as well as an artist you know is not in your collection. Check that for artists with multiple matches, all are found.
+
+console.log(findByArtist('Nicki Minaj'));
+console.log(findByArtist('Knaan'));
+console.log(findByArtist('Riri'));
+
 
 // > When testing your functions, write all tests in the JavaScript file!
 
